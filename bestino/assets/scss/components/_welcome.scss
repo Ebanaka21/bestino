@@ -1,0 +1,64 @@
+.welcome{
+    background: url(/assets/image/Group.png) no-repeat center center;
+    height: 1080px;
+    &__wrapper{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__image{
+        position: absolute;
+        right: 0;
+        z-index: -1;
+    }
+    &__desc{
+        padding-left: 120px;
+        @include md{
+            padding-left: 0;
+        }
+        &-title{
+            font-size: 140px;
+            font-weight: 600;
+            line-height: 170px;
+            @include lg{
+                font-size: 70px;
+            }
+            @include md{
+                font-size: 90px;
+            }
+        }
+        &-active{
+            color: red;
+            font-size: 95px;
+            @include lg{
+                text-align: center;
+                font-size: 70px;
+            }
+            @include md{
+                text-align: center;
+                align-items: center;
+                font-size: 60px;
+            }
+        }
+        &-text{
+            font-size: 30px;
+            font-weight: 400;
+            max-width: 610px;
+            color: #E0E1E3;
+
+            @include md{
+                font-size: 30px;
+            }
+        }
+    }
+    &__scroll{
+        position: absolute;
+        bottom: 0;
+        left: -105px;
+    }
+    &__mouse{
+        position: absolute;
+        right: 50%;
+        bottom: 20px;
+    }
+}

@@ -1,0 +1,82 @@
+.Harapova {
+    width: 1920px;
+    height: 1000px;
+    background: url(/assets/image/Group.png) no-repeat center center;
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        position: relative;
+
+        &-img {
+            position: absolute;
+            left: -105px;
+        }
+
+        &-link {
+            background: #B2141466;
+            color: white;
+            padding: 10px 16px 10px 16px;
+            border-radius: 30px;
+            font-size: 30px;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        &-one {
+            display: flex;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+            @include xxl{
+                flex-direction: column;
+            }
+        }
+
+        &-two {
+            display: flex;
+            gap: 30px;
+            margin-top: 20px;
+            padding: 0;
+            @include xxl{
+                flex-direction: column;
+            }
+        }
+
+        &-three {
+            display: flex;
+            gap: 30px;
+            margin-top: 20px;
+            padding: 0;
+            @include xl{
+                flex-direction: column;
+            }
+        }
+
+        &-four {
+            display: flex;
+            gap: 30px;
+            margin-top: 20px;
+            padding: 0;
+            @include lg{
+                flex-direction: column;
+            }
+        }
+
+        &-text {
+            font-family: Montserrat;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 43.5px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            max-width: 600px;
+        }
+    }
+}
+::-webkit-scrollbar{
+    display: none;
+   }

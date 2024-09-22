@@ -1,0 +1,43 @@
+.tupical{
+    background: url(/assets/image/Group.png) no-repeat center center;
+    width: 100%;
+    height: 1700px;
+    padding-top: 200px;
+
+        &__title{
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 72.5px;
+    
+    }
+    &__cards{
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        
+    }
+    &__card{
+        width: 100%;
+        gap: 500px;
+        padding: 50px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(3 ,1fr);
+        padding-bottom: 80px;
+        @include lg{
+            grid-template-columns: repeat(2 ,1fr);
+        }
+        @include md{
+            grid-template-columns: repeat(1 ,1fr);
+        }
+    }
+    &__scroll{
+        position: absolute;
+        transform: translate(0,-700px);
+        left: -105px;
+        width: 15px;
+    }
+}
